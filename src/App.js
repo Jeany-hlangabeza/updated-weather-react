@@ -3,25 +3,27 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <small>
-        coded by Jeany Hlangabeza,{" "}
-        <a
-          href="https://github.com/Jeany-hlangabeza/updated-weather-react"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-sourced on Github
-        </a>{" "}
-        and hosted on{" "}
-        <a
-          href="https://boisterous-horse-23cacb.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Netlify
-        </a>
-      </small>
+      <div className="container">
+        <h1>Weather App</h1>
+        <small>
+          coded by Jeany Hlangabeza,{" "}
+          <a
+            href="https://github.com/Jeany-hlangabeza/updated-weather-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on Github
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://boisterous-horse-23cacb.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
+        </small>
+      </div>
     </div>
   );
 }
