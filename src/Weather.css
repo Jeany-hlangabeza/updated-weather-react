@@ -22,6 +22,7 @@
   border-radius: 5px;
   background-color: rgb(114, 227, 241);
   color: white;
+  transition: all ease-in-out 150ms;
 }
 .weather form {
   margin-bottom: 10px;
@@ -55,4 +56,8 @@
 .weather .units {
   position: relative;
   top: -30px;
+}
+
+.search-btn:hover {
+  background-color: rgb(68, 206, 224);
 }
