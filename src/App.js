@@ -6,8 +6,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather />
-
-        <small>
+        <footer>
           coded by Jeany Hlangabeza,{" "}
           <a
             href="https://github.com/Jeany-hlangabeza/updated-weather-react"
@@ -24,7 +23,7 @@ export default function App() {
           >
             Netlify
           </a>
-        </small>
+        </footer>
       </div>
     </div>
   );

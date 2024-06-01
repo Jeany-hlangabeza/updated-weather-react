@@ -9,16 +9,19 @@ export default function Weather() {
             <input
               type="search"
               placeholder="Enter a city..."
-              className="form-control"
+              className="form-control search-box"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <button type="submit">Search</button>
+            <button type="submit" className="search-btn">
+              Search
+            </button>
           </div>
         </div>
       </form>
       <h1>New york</h1>
-      <ul>
+      <ul className="date-time">
         <li>Saturday 15:00</li>
         <li>Sunny</li>
       </ul>
@@ -28,7 +31,10 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="sunny-clouds"
           />
-          27 ℃
+          <span className="temperature">27</span>{" "}
+          <span className="units">
+            <a href="https://jeany.com">℃</a> |<a href="https://jeany.com">℉</a>
+          </span>
         </div>
         <div className="col-6">
           <ul>

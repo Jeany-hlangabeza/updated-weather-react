@@ -1,3 +1,58 @@
 .weather {
-  border: 1px solid rgb(151, 140, 140);
+  border: 1px solid rgb(189, 188, 188);
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 6px;
+  font-family: arial, sans-serif;
+}
+.weather .search-box {
+  border-style: none;
+  background-color: rgb(241, 241, 241);
+  padding: 8px;
+}
+
+.weather .search-btn {
+  width: 100px;
+  position: relative;
+  left: -12px;
+  border-style: none;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(114, 227, 241);
+  color: white;
+}
+.weather form {
+  margin-bottom: 10px;
+}
+.weather h1 {
+  color: rgb(87, 95, 104);
+}
+
+.weather ul {
+  list-style: none;
+  color: rgb(112, 117, 122);
+}
+
+.weather .date-time {
+  margin: 0;
+  padding-left: 0;
+}
+.weather img {
+  float: left;
+}
+
+.weather .temperature {
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.weather .units a {
+  text-decoration: none;
+  color: rgb(112, 117, 122);
+}
+.weather .units {
+  position: relative;
+  top: -30px;
 }
