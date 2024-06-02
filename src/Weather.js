@@ -19,10 +19,9 @@ export default function Weather() {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
     });
-    console.log(response.data.dt);
+
     setLoaded(true);
   }
-
   function handleSearch(event) {
     event.preventDefault();
     search();
@@ -73,8 +72,7 @@ export default function Weather() {
               {Math.round(weatherData.temperature)}
             </span>{" "}
             <span className="units">
-              <a href="https://jeany.com">℃</a> |
-              <a href="https://jeany.com">℉</a>
+              <a href="/">℃</a> |<a href="/">℉</a>
             </span>
           </div>
           <div className="col-6">
