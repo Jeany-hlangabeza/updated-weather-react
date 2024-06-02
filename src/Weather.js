@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormateDate from "./FormateDate";
 
 export default function Weather() {
   const [loaded, setLoaded] = useState(false);
@@ -16,8 +17,9 @@ export default function Weather() {
       wind: response.data.wind.speed,
       icon: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       description: response.data.weather[0].description,
-      date: "Saturday 15:00",
+      date: new Date(response.data.dt * 1000),
     });
+    console.log(response.data.dt);
     setLoaded(true);
   }
 
@@ -59,7 +61,9 @@ export default function Weather() {
         </form>
         <h1>{weatherData.city}</h1>
         <ul className="date-time">
-          <li>{weatherData.date}</li>
+          <li>
+            <FormateDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row">
