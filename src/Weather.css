@@ -46,7 +46,8 @@
 
 .weather .temperature {
   font-size: 48px;
-  line-height: 65px;
+  line-height: 90px;
+  margin-left: -9px;
 }
 
 .weather .units a {
@@ -56,6 +57,7 @@
 .weather .units {
   position: relative;
   top: -30px;
+  left: -3px;
 }
 
 .search-btn:hover {

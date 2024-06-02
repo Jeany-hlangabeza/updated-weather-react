@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function (props) {
+export default function FormateDate(props) {
   const date = props.date;
   const days = [
     "Sunday",
