@@ -1,0 +1,24 @@
+.Weather-forecast {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.Weather-forecast img {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  top: -20px;
+}
+
+.weather-forcast-temp {
+  color: rgb(112, 117, 122);
+  position: relative;
+  top: -23px;
+}
+
+.WeatherForcast-day {
+  position: relative;
+  top: -10px;
+  left: 12px;
+}
